@@ -1,0 +1,21 @@
+
+package methods;
+import java.util.Scanner;
+public class PrintingNumbersBetweenRange {
+
+	public static  void printRange(int startNo, int endNo){
+		for(int i=startNo+1;i<endNo;i++)
+			System.out.println(i);
+	}
+	
+
+public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	int startNo;
+	int endNo;
+	System.out.println("Enter the range");
+	startNo=sc.nextInt();
+	endNo=sc.nextInt();
+	printRange(startNo,endNo);
+	}
+}
